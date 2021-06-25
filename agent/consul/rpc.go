@@ -56,14 +56,14 @@ var RPCCounters = []prometheus.CounterDefinition{
 	},
 	{
 		Name: []string{"rpc", "query"},
-		Help: "Increments when a server receives a new blocking RPC request, indicating the rate of new blocking query calls.",
+		Help: "Increments when a server receives a read request, indicating the rate of new read queries.",
 	},
 }
 
 var RPCGauges = []prometheus.GaugeDefinition{
 	{
 		Name: []string{"rpc", "queries_blocking"},
-		Help: "Shows the current number of in-flight blocking queries the server is handling.",
+		Help: "Shows the current number of in-flight read queries the server is handling.",
 	},
 }
 
